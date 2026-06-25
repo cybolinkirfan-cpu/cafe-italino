@@ -1,0 +1,850 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cafe Italino | Premium Artisanal Dining & Luxury Culinary Experience</title>
+    <meta name="description"
+        content="Indulge in a premium Italian dining experience at Cafe Italino. Exquisite menus, luxury ambiance, and artisanal dishes crafted by expert chefs. Book your table today.">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Great+Vibes&family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <!-- FontAwesome for Premium Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+
+<body>
+
+    <!-- STICKY NAVBAR -->
+    <header class="navbar-header" id="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">
+                <span class="gold-text">Cafe</span> Italino
+            </a>
+
+            <nav class="nav-menu" id="navMenu">
+                <a href="#home" class="nav-link active">Home</a>
+                <a href="#menu" class="nav-link">Menu</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#reservation" class="nav-link">Book a Table</a>
+                <a href="#reservation" class="btn btn-primary mobile-cta">Book Now</a>
+            </nav>
+
+            <div class="nav-actions">
+                <!-- Cart Trigger in Navbar -->
+                <button class="nav-cart-btn" id="navCartBtn" aria-label="Open Cart">
+                    <i class="fa-solid fa-basket-shopping"></i>
+                    <span class="cart-badge" id="cartBadgeNavbar">0</span>
+                </button>
+                <a href="#reservation" class="btn btn-primary nav-cta">Book Now</a>
+
+                <!-- Hamburger Menu Button -->
+                <button class="hamburger" id="hamburgerBtn" aria-label="Toggle Navigation">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- HERO SECTION -->
+        <section class="hero-section" id="home">
+            <div class="hero-overlay"></div>
+            <div class="hero-content">
+                <span class="hero-subtitle">WELCOME TO CAFE ITALINO</span>
+                <h1 class="hero-title">Artisan Dining.<br><span class="gold-text">Refined Taste.</span></h1>
+                <p class="hero-tagline">Experience an unforgettable journey of tastes, textures, and dark luxury, where
+                    every dish is a hand-crafted culinary masterpiece.</p>
+                <div class="hero-actions">
+                    <a href="#menu" class="btn btn-primary">View Menu</a>
+                    <a href="#reservation" class="btn btn-outline">Book a Table</a>
+                </div>
+            </div>
+            <!-- Scroll Indicator -->
+            <div class="scroll-indicator">
+                <a href="#features" class="scroll-link">
+                    <span>Scroll Down</span>
+                    <i class="fa-solid fa-chevron-down bounce"></i>
+                </a>
+            </div>
+        </section>
+
+        <!-- FEATURES SECTION -->
+        <section class="features-section" id="features">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">WHY CAFE ITALINO</span>
+                    <h2 class="section-title">The Pillars of Our Craft</h2>
+                </div>
+                <div class="features-grid">
+                    <!-- Feature Card 1 -->
+                    <div class="feature-card">
+                        <div class="feature-image-wrapper">
+                            <img src="Assests/images/pillar_fresh.png" alt="Fresh Ingredients" class="feature-img">
+                            <div class="feature-card-icon-badge">
+                                <i class="fa-solid fa-seedling"></i>
+                            </div>
+                        </div>
+                        <div class="feature-card-body">
+                            <h3>Fresh Ingredients</h3>
+                            <p>We source organic, rare, and artisanal ingredients daily from local sustainable farms to
+                                ensure peak flavor in every dish.</p>
+                        </div>
+                    </div>
+
+                    <!-- Feature Card 2 -->
+                    <div class="feature-card">
+                        <div class="feature-image-wrapper">
+                            <img src="Assests/images/pillar_chef.png" alt="Expert Chefs" class="feature-img">
+                            <div class="feature-card-icon-badge">
+                                <i class="fa-solid fa-kitchen-set"></i>
+                            </div>
+                        </div>
+                        <div class="feature-card-body">
+                            <h3>Expert Chefs</h3>
+                            <p>Our kitchen is led by award-winning, passionate culinary masters who blend traditional
+                                heritage with modern culinary chemistry.</p>
+                        </div>
+                    </div>
+
+                    <!-- Feature Card 3 -->
+                    <div class="feature-card">
+                        <div class="feature-image-wrapper">
+                            <img src="Assests/images/pillar_eco.png" alt="Eco-Luxury Dining" class="feature-img">
+                            <div class="feature-card-icon-badge">
+                                <i class="fa-solid fa-leaf"></i>
+                            </div>
+                        </div>
+                        <div class="feature-card-body">
+                            <h3>Eco-Luxury Dining</h3>
+                            <p>From energy-efficient kitchens to 100% biodegradable custom delivery packaging, we commit
+                                to environmental excellence without compromising luxury.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CHEF'S CHOICE HORIZONTAL SCROLL SECTION -->
+        <section class="chefs-choice-section" id="spotlight">
+            <div class="chefs-choice-header container">
+                <span class="section-tag">CURATED BY OUR EXECUTIVE CHEF</span>
+                <h2 class="section-title">Chef's Choice</h2>
+                <p class="chefs-choice-subtitle">Five extraordinary dishes, each a personal testament to flavour
+                    mastery.</p>
+            </div>
+
+            <!-- Horizontal scroll viewport -->
+            <div class="chefs-choice-viewport">
+                <div class="chefs-choice-track" id="chefsChoiceTrack">
+
+                    <!-- Card 1 -->
+                    <div class="chefs-card">
+                        <div class="chefs-card-img-wrap">
+                            <img src="Assests/images/chefs_special.png" alt="Wagyu Filet Mignon" class="chefs-card-img">
+                            <span class="chefs-card-number">01</span>
+                        </div>
+                        <div class="chefs-card-content">
+                            <span class="chefs-card-tag">Signature Main</span>
+                            <h3>Truffle Wagyu Mignon</h3>
+                            <p>A45-grade Wagyu centre-cut glazed in black truffle butter, plated with saffron parsnip
+                                purée & gold asparagus.</p>
+                            <div class="chefs-card-footer">
+                                <span class="chefs-card-price">$78.00</span>
+                                <button class="btn btn-card add-to-cart-btn" data-id="chef-1"
+                                    data-name="Truffle Wagyu Mignon" data-price="78.00"
+                                    data-image="Assests/images/chefs_special.png">
+                                    <i class="fa-solid fa-plus"></i> Add
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 2 -->
+                    <div class="chefs-card">
+                        <div class="chefs-card-img-wrap">
+                            <img src="Assests/images/risotto_truffle.png" alt="Black Truffle Risotto"
+                                class="chefs-card-img">
+                            <span class="chefs-card-number">02</span>
+                        </div>
+                        <div class="chefs-card-content">
+                            <span class="chefs-card-tag">Artisanal Pasta</span>
+                            <h3>Black Truffle Risotto</h3>
+                            <p>Slow-stirred Carnaroli risotto with aged Parmesan, shaved Périgord black truffle & white
+                                wine reduction.</p>
+                            <div class="chefs-card-footer">
+                                <span class="chefs-card-price">$42.00</span>
+                                <button class="btn btn-card add-to-cart-btn" data-id="chef-2"
+                                    data-name="Black Truffle Risotto" data-price="42.00"
+                                    data-image="Assests/images/risotto_truffle.png">
+                                    <i class="fa-solid fa-plus"></i> Add
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 3 -->
+                    <div class="chefs-card">
+                        <div class="chefs-card-img-wrap">
+                            <img src="Assests/images/sea_bass_saffron.png" alt="Chilean Sea Bass"
+                                class="chefs-card-img">
+                            <span class="chefs-card-number">03</span>
+                        </div>
+                        <div class="chefs-card-content">
+                            <span class="chefs-card-tag">Seafood</span>
+                            <h3>Saffron Sea Bass</h3>
+                            <p>Crispy-skin Chilean sea bass in golden saffron beurre blanc, finished with capers, dill &
+                                fennel fronds.</p>
+                            <div class="chefs-card-footer">
+                                <span class="chefs-card-price">$54.00</span>
+                                <button class="btn btn-card add-to-cart-btn" data-id="chef-3"
+                                    data-name="Saffron Sea Bass" data-price="54.00"
+                                    data-image="Assests/images/sea_bass_saffron.png">
+                                    <i class="fa-solid fa-plus"></i> Add
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 4 -->
+                    <div class="chefs-card">
+                        <div class="chefs-card-img-wrap">
+                            <img src="Assests/images/main_lamb.png" alt="Herb-Crusted Lamb" class="chefs-card-img">
+                            <span class="chefs-card-number">04</span>
+                        </div>
+                        <div class="chefs-card-content">
+                            <span class="chefs-card-tag">Premium Meat</span>
+                            <h3>Herb-Crusted Lamb</h3>
+                            <p>Rack of lamb in a herb-Dijon crust, rested to perfection, served with rosemary jus & baby
+                                root vegetables.</p>
+                            <div class="chefs-card-footer">
+                                <span class="chefs-card-price">$48.00</span>
+                                <button class="btn btn-card add-to-cart-btn" data-id="chef-4"
+                                    data-name="Herb-Crusted Lamb" data-price="48.00"
+                                    data-image="Assests/images/main_lamb.png">
+                                    <i class="fa-solid fa-plus"></i> Add
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 5 -->
+                    <div class="chefs-card">
+                        <div class="chefs-card-img-wrap">
+                            <img src="Assests/images/dessert_lava_cake.png" alt="Chocolate Lava Cake"
+                                class="chefs-card-img">
+                            <span class="chefs-card-number">05</span>
+                        </div>
+                        <div class="chefs-card-content">
+                            <span class="chefs-card-tag">Grand Finale</span>
+                            <h3>Molten Lava Cake</h3>
+                            <p>Warm Valrhona chocolate dome with a liquid molten centre, gold leaf, raspberry coulis &
+                                vanilla bean gelato.</p>
+                            <div class="chefs-card-footer">
+                                <span class="chefs-card-price">$18.00</span>
+                                <button class="btn btn-card add-to-cart-btn" data-id="chef-5"
+                                    data-name="Molten Lava Cake" data-price="18.00"
+                                    data-image="Assests/images/dessert_lava_cake.png">
+                                    <i class="fa-solid fa-plus"></i> Add
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div><!-- /.chefs-choice-track -->
+            </div><!-- /.chefs-choice-viewport -->
+
+            <!-- Progress indicator -->
+            <!-- <div class="chefs-progress-bar container">
+                <div class="chefs-progress-fill" id="chefsProgressFill"></div>
+            </div> -->
+        </section>
+
+        <!-- INTERACTIVE MENU SECTION -->
+        <section class="menu-section" id="menu">
+
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">OUR CULINARY CREATIONS</span>
+                    <h2 class="section-title">Curated Selection</h2>
+                </div>
+
+                <!-- Menu Filter Bar (Same Line with Space-Between layout) -->
+                <div class="menu-filter-container">
+                    <!-- Category Filter Tabs -->
+                    <div class="menu-tabs">
+                        <button class="tab-btn active" data-filter="all">All</button>
+                        <button class="tab-btn" data-filter="starters">Starters</button>
+                        <button class="tab-btn" data-filter="mains">Mains</button>
+                        <button class="tab-btn" data-filter="desserts">Desserts</button>
+                        <button class="tab-btn" data-filter="drinks">Drinks</button>
+                    </div>
+
+                    <!-- Veg / Non-Veg Checkbox Toggles -->
+                    <div class="menu-type-filters">
+                        <label class="checkbox-container">
+                            <input type="checkbox" id="vegCheckbox" value="veg">
+                            <span class="checkmark"><i class="fa-solid fa-leaf"></i></span>
+                            Veg Only
+                        </label>
+                        <label class="checkbox-container">
+                            <input type="checkbox" id="nonVegCheckbox" value="non-veg">
+                            <span class="checkmark"><i class="fa-solid fa-drumstick-bite"></i></span>
+                            Non-Veg Only
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Dynamic Grid Displaying Dish Cards -->
+                <div class="menu-grid" id="menuGrid">
+                    <!-- No items message -->
+                    <div class="no-items-message" id="noItemsMessage" style="display: none;">
+                        <i class="fa-solid fa-utensils"></i>
+                        <span>No items available matching the selected filters.</span>
+                    </div>
+
+                    <!-- Starter 1 -->
+                    <div class="menu-card" data-category="starters" data-type="veg">
+                        <div class="card-image-wrapper">
+                            <img src="Assests/images/starter_burrata.png" alt="Burrata & Heirloom Tomato Salad"
+                                class="menu-card-img">
+                            <span class="card-badge badge-vegan">Vegan</span>
+                        </div>
+                        <div class="card-body">
+                            <div class="card-title-price">
+                                <h3>Burrata & Heirloom Salad</h3>
+                                <span class="price">$18.00</span>
+                            </div>
+                            <p class="description">Fresh organic burrata ball served over heirloom tomatoes, dressed in
+                                aged balsamic reduction and wild basil pesto.</p>
+                            <button class="btn btn-card add-to-cart-btn" data-id="starter-1"
+                                data-name="Burrata & Heirloom Salad" data-price="18.00"
+                                data-image="Assests/images/starter_burrata.png">
+                                <i class="fa-solid fa-plus"></i> Add to Order
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Starter 2 -->
+                    <div class="menu-card" data-category="starters" data-type="veg">
+                        <div class="card-image-wrapper">
+                            <img src="Assests/images/starter_burrata.png" alt="Truffle Mushroom Arancini"
+                                class="menu-card-img img-hue-rotate">
+                            <span class="card-badge badge-spicy">Spicy</span>
+                        </div>
+                        <div class="card-body">
+                            <div class="card-title-price">
+                                <h3>Truffle Arancini</h3>
+                                <span class="price">$16.00</span>
+                            </div>
+                            <p class="description">Crispy arborio rice balls stuffed with wild black truffle and melted
+                                mozzarella, finished with spicy aioli drizzle.</p>
+                            <button class="btn btn-card add-to-cart-btn" data-id="starter-2"
+                                data-name="Truffle Arancini" data-price="16.00"
+                                data-image="Assests/images/starter_burrata.png">
+                                <i class="fa-solid fa-plus"></i> Add to Order
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Main 1 -->
+                    <div class="menu-card" data-category="mains" data-type="non-veg">
+                        <div class="card-image-wrapper">
+                            <img src="Assests/images/main_lamb.png" alt="Herb-Crusted Rack of Lamb"
+                                class="menu-card-img">
+                            <span class="card-badge badge-chef">Chef's Choice</span>
+                        </div>
+                        <div class="card-body">
+                            <div class="card-title-price">
+                                <h3>Herb-Crusted Lamb</h3>
+                                <span class="price">$48.00</span>
+                            </div>
+                            <p class="description">Perfectly seared rack of lamb in a herb-Dijon crust, served with baby
+                                carrots, rosemary jus, and parsnip purée.</p>
+                            <button class="btn btn-card add-to-cart-btn" data-id="main-1" data-name="Herb-Crusted Lamb"
+                                data-price="48.00" data-image="Assests/images/main_lamb.png">
+                                <i class="fa-solid fa-plus"></i> Add to Order
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Main 2 -->
+                    <div class="menu-card" data-category="mains" data-type="non-veg">
+                        <div class="card-image-wrapper">
+                            <img src="Assests/images/main_lamb.png" alt="Spicy Seafood Tagliatelle"
+                                class="menu-card-img img-hue-rotate-180">
+                            <span class="card-badge badge-spicy">Spicy</span>
+                        </div>
+                        <div class="card-body">
+                            <div class="card-title-price">
+                                <h3>Spicy Seafood Tagliatelle</h3>
+                                <span class="price">$38.00</span>
+                            </div>
+                            <p class="description">House-made tagliatelle pasta tossed with lobster, prawns, and mussels
+                                in a rich spicy calabrian pepper tomato base.</p>
+                            <button class="btn btn-card add-to-cart-btn" data-id="main-2"
+                                data-name="Spicy Seafood Tagliatelle" data-price="38.00"
+                                data-image="Assests/images/main_lamb.png">
+                                <i class="fa-solid fa-plus"></i> Add to Order
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Dessert 1 -->
+                    <div class="menu-card" data-category="desserts" data-type="veg">
+                        <div class="card-image-wrapper">
+                            <img src="Assests/images/dessert_lava_cake.png" alt="Molten Chocolate Lava Cake"
+                                class="menu-card-img">
+                            <span class="card-badge badge-vegan">Vegetarian</span>
+                        </div>
+                        <div class="card-body">
+                            <div class="card-title-price">
+                                <h3>Chocolate Lava Cake</h3>
+                                <span class="price">$16.00</span>
+                            </div>
+                            <p class="description">Warm decadent chocolate cake with a rich molten centre, garnished
+                                with gold leaf, fresh raspberries, and vanilla bean gelato.</p>
+                            <button class="btn btn-card add-to-cart-btn" data-id="dessert-1"
+                                data-name="Chocolate Lava Cake" data-price="16.00"
+                                data-image="Assests/images/dessert_lava_cake.png">
+                                <i class="fa-solid fa-plus"></i> Add to Order
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Dessert 2 -->
+                    <div class="menu-card" data-category="desserts" data-type="veg">
+                        <div class="card-image-wrapper">
+                            <img src="Assests/images/dessert_lava_cake.png" alt="Saffron & Gold Panna Cotta"
+                                class="menu-card-img img-hue-rotate-yellow">
+                            <span class="card-badge badge-vegan">Vegan</span>
+                        </div>
+                        <div class="card-body">
+                            <div class="card-title-price">
+                                <h3>Gold Panna Cotta</h3>
+                                <span class="price">$15.00</span>
+                            </div>
+                            <p class="description">Silk-textured organic coconut panna cotta infused with premium
+                                saffron threads and topped with orange blossom glaze.</p>
+                            <button class="btn btn-card add-to-cart-btn" data-id="dessert-2"
+                                data-name="Gold Panna Cotta" data-price="15.00"
+                                data-image="Assests/images/dessert_lava_cake.png">
+                                <i class="fa-solid fa-plus"></i> Add to Order
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Drink 1 -->
+                    <div class="menu-card" data-category="drinks" data-type="veg">
+                        <div class="card-image-wrapper">
+                            <img src="Assests/images/drink_cocktail.png" alt="Smoked Gold Old Fashioned"
+                                class="menu-card-img">
+                            <span class="card-badge badge-chef">Signature</span>
+                        </div>
+                        <div class="card-body">
+                            <div class="card-title-price">
+                                <h3>Smoked Gold Cocktail</h3>
+                                <span class="price">$22.00</span>
+                            </div>
+                            <p class="description">Artisanal single malt scotch infused with orange bitters and a touch
+                                of organic honey, smoked with oak chips and gold leaf.</p>
+                            <button class="btn btn-card add-to-cart-btn" data-id="drink-1"
+                                data-name="Smoked Gold Cocktail" data-price="22.00"
+                                data-image="Assests/images/drink_cocktail.png">
+                                <i class="fa-solid fa-plus"></i> Add to Order
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Drink 2 -->
+                    <div class="menu-card" data-category="drinks" data-type="veg">
+                        <div class="card-image-wrapper">
+                            <img src="Assests/images/drink_cocktail.png" alt="Amber Spiced Apple Elixir"
+                                class="menu-card-img img-hue-rotate-green">
+                            <span class="card-badge badge-vegan">Vegan</span>
+                        </div>
+                        <div class="card-body">
+                            <div class="card-title-price">
+                                <h3>Amber Spiced Elixir</h3>
+                                <span class="price">$12.00</span>
+                            </div>
+                            <p class="description">Crisp organic apple cider mixed with ginger liqueur, fresh lemon
+                                juice, sparkling tonic, and rosemary aromatics (Non-Alcoholic).</p>
+                            <button class="btn btn-card add-to-cart-btn" data-id="drink-2"
+                                data-name="Amber Spiced Elixir" data-price="12.00"
+                                data-image="Assests/images/drink_cocktail.png">
+                                <i class="fa-solid fa-plus"></i> Add to Order
+                            </button>
+                        </div>
+                    </div>>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- ABOUT & CHEF'S SPECIAL SECTION (SPLIT SCREEN) -->
+        <section class="about-section" id="about">
+            <div class="container-fluid split-layout">
+                <!-- Left: Elegant Story -->
+                <div class="about-story">
+                    <div class="about-story-inner">
+                        <span class="section-tag">A LEGACY OF FLAVOR</span>
+                        <h2 class="section-title">The Cafe Italino Philosophy</h2>
+                        <p class="about-desc">
+                            Established on a passion for Italian culinary excellence, Cafe Italino brings together
+                            elements of gastronomic science and high-end aesthetic design. We believe that dining is not
+                            just about sustenance, but a fully sensory performative art.
+                        </p>
+                        <p class="about-desc">
+                            Every detail inside Cafe Italino—from our custom acoustic engineering and hand-selected
+                            luxury slate tableware, to the temperature-controlled lighting—is carefully curated to
+                            amplify your dining experience.
+                        </p>
+                        <div class="about-signature">
+                            <div class="sig-text">
+                                <h4 class="signature-font">Burhan Chef-De-Cuisine</h4>
+                                <span>Master Chef & Owner</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right: Chef's Special Highlight -->
+                <div class="chef-special-highlight">
+                    <div class="special-card">
+                        <div class="special-badge">TONIGHT'S SPECIAL HIGHLIGHT</div>
+                        <div class="special-img-wrapper">
+                            <img src="Assests/images/chefs_special.png" alt="Wagyu Gold Filet Mignon"
+                                class="special-img">
+                        </div>
+                        <div class="special-card-body">
+                            <div class="special-title-price">
+                                <h3>Wagyu Gold Filet Mignon</h3>
+                                <span class="gold-price">$78.00</span>
+                            </div>
+                            <p class="special-desc">An extraordinary cut of A5 Japanese Wagyu steak, cooked over hot
+                                lava stones, gilded with 24k gold leaf, served alongside truffled potato mash and
+                                microgreens.</p>
+                            <div class="special-quote">
+                                <p>"We combine fire, luxury, and heritage to create plates that leave a lifetime memory
+                                    on your palate."</p>
+                            </div>
+                            <button class="btn btn-primary add-to-cart-btn" data-id="special-wagyu"
+                                data-name="Wagyu Gold Filet Mignon" data-price="78.00"
+                                data-image="Assests/images/chefs_special.png">
+                                <i class="fa-solid fa-cart-shopping"></i> Add Special to Order
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- TABLE RESERVATION SECTION -->
+        <section class="reservation-section" id="reservation">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">EXPERIENCE LUXURY FIRSTHAND</span>
+                    <h2 class="section-title">Reserve A Table</h2>
+                    <p class="section-subtitle">Book your dining experience. Reservations are highly recommended.
+                        Walk-ins are accommodated based on daily availability.</p>
+                </div>
+
+                <div class="reservation-form-container">
+                    <form id="reservationForm" novalidate>
+                        <div class="form-grid">
+                            <!-- Name -->
+                            <div class="form-group">
+                                <label for="guestName">Name</label>
+                                <div class="input-wrapper">
+                                    <i class="fa-solid fa-user"></i>
+                                    <input type="text" id="guestName" name="name" placeholder="John Doe" required
+                                        autocomplete="name">
+                                </div>
+                                <span class="error-msg" id="nameError">Name is required</span>
+                            </div>
+
+                            <!-- Email -->
+                            <div class="form-group">
+                                <label for="guestEmail">Email Address</label>
+                                <div class="input-wrapper">
+                                    <i class="fa-solid fa-envelope"></i>
+                                    <input type="email" id="guestEmail" name="email" placeholder="john@example.com"
+                                        required autocomplete="email">
+                                </div>
+                                <span class="error-msg" id="emailError">Please enter a valid email address</span>
+                            </div>
+
+                            <!-- Phone -->
+                            <div class="form-group">
+                                <label for="guestPhone">Phone Number</label>
+                                <div class="input-wrapper">
+                                    <i class="fa-solid fa-phone"></i>
+                                    <input type="tel" id="guestPhone" name="phone" placeholder="+1 (555) 000-0000"
+                                        required autocomplete="tel">
+                                </div>
+                                <span class="error-msg" id="phoneError">Please enter a valid phone number</span>
+                            </div>
+
+                            <!-- Number of Guests -->
+                            <div class="form-group">
+                                <label for="guestCount">Number of Guests</label>
+                                <div class="input-wrapper">
+                                    <i class="fa-solid fa-users"></i>
+                                    <select id="guestCount" name="guests" required>
+                                        <option value="" disabled selected>Select Guests</option>
+                                        <option value="1">1 Person</option>
+                                        <option value="2">2 People</option>
+                                        <option value="3">3 People</option>
+                                        <option value="4">4 People</option>
+                                        <option value="5">5 People</option>
+                                        <option value="6">6 People</option>
+                                        <option value="8">8 People (Private Booth)</option>
+                                        <option value="10">10+ People (Event Room)</option>
+                                    </select>
+                                </div>
+                                <span class="error-msg" id="guestsError">Please select number of guests</span>
+                            </div>
+
+                            <!-- Date Picker -->
+                            <div class="form-group">
+                                <label for="reserveDate">Reservation Date</label>
+                                <div class="input-wrapper">
+                                    <i class="fa-solid fa-calendar-days"></i>
+                                    <input type="date" id="reserveDate" name="date" required>
+                                </div>
+                                <span class="error-msg" id="dateError">Please select a valid future date</span>
+                            </div>
+
+                            <!-- Time Slot -->
+                            <div class="form-group">
+                                <label for="reserveTime">Preferred Time Slot</label>
+                                <div class="input-wrapper">
+                                    <i class="fa-solid fa-clock"></i>
+                                    <select id="reserveTime" name="time" required>
+                                        <option value="" disabled selected>Select Time Slot</option>
+                                        <optgroup label="Lunch Service">
+                                            <option value="12:00 PM">12:00 PM</option>
+                                            <option value="1:00 PM">1:00 PM</option>
+                                            <option value="2:00 PM">2:00 PM</option>
+                                        </optgroup>
+                                        <optgroup label="Dinner Service">
+                                            <option value="6:00 PM">6:00 PM</option>
+                                            <option value="7:00 PM">7:00 PM</option>
+                                            <option value="8:00 PM">8:00 PM</option>
+                                            <option value="9:00 PM">9:00 PM</option>
+                                            <option value="10:00 PM">10:00 PM</option>
+                                        </optgroup>
+                                    </select>
+                                </div>
+                                <span class="error-msg" id="timeError">Please select a time slot</span>
+                            </div>
+                        </div>
+
+                        <!-- Special Requests -->
+                        <div class="form-group full-width">
+                            <label for="specialRequests">Special Requests / Allergies</label>
+                            <div class="input-wrapper text-area-wrapper">
+                                <i class="fa-solid fa-clipboard-list"></i>
+                                <textarea id="specialRequests" name="requests" rows="4"
+                                    placeholder="Let us know if you have food allergies, dietary restrictions, or are celebrating a special occasion..."></textarea>
+                            </div>
+                        </div>
+
+                        <div class="form-actions">
+                            <button type="submit" class="btn btn-primary btn-submit">Confirm Reservation</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- DYNAMIC CART SIDEBAR (SLIDE-OUT DRAWER) -->
+    <div class="cart-sidebar-overlay" id="cartOverlay"></div>
+    <div class="cart-sidebar" id="cartSidebar">
+        <div class="cart-header">
+            <h3>Your Order</h3>
+            <button class="close-cart-btn" id="closeCartBtn" aria-label="Close Cart">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+        </div>
+
+        <div class="cart-items" id="cartItemsContainer">
+            <!-- Empty Cart Placeholder -->
+            <div class="empty-cart-message">
+                <i class="fa-solid fa-basket-shopping"></i>
+                <p>Your order is currently empty.</p>
+                <a href="#menu" class="btn btn-outline" id="cartShopBtn">Explore Menu</a>
+            </div>
+        </div>
+
+        <div class="cart-footer">
+            <div class="price-row">
+                <span>Subtotal</span>
+                <span id="cartSubtotal">$0.00</span>
+            </div>
+            <div class="price-row">
+                <span>Tax & Service Charge (10%)</span>
+                <span id="cartTax">$0.00</span>
+            </div>
+            <hr class="cart-divider">
+            <div class="price-row grand-total">
+                <span>Grand Total</span>
+                <span id="cartTotal">$0.00</span>
+            </div>
+            <button class="btn btn-primary checkout-btn" id="checkoutBtn">
+                Place Order <i class="fa-solid fa-arrow-right"></i>
+            </button>
+        </div>
+    </div>
+
+    <!-- FLOATING CART BUTTON -->
+    <button class="floating-cart" id="floatingCartBtn" aria-label="View Order">
+        <i class="fa-solid fa-basket-shopping"></i>
+        <span class="floating-cart-label">ORDER</span>
+        <span class="cart-badge" id="cartBadgeFloating">0</span>
+    </button>
+
+    <!-- RESERVATION SUCCESS MODAL -->
+    <div class="modal-overlay" id="successModal">
+        <div class="modal-content">
+            <button class="close-modal-btn" id="closeModalBtn" aria-label="Close Modal">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+            <div class="modal-header-icon">
+                <i class="fa-solid fa-circle-check"></i>
+            </div>
+            <h2>Reservation Confirmed!</h2>
+            <p class="modal-intro">Thank you for choosing Cafe Italino. Your table is reserved.</p>
+
+            <div class="reservation-summary">
+                <div class="summary-item">
+                    <span class="summary-label">Name</span>
+                    <span class="summary-value" id="summaryName">John Doe</span>
+                </div>
+                <div class="summary-item">
+                    <span class="summary-label">Date</span>
+                    <span class="summary-value" id="summaryDate">June 28, 2026</span>
+                </div>
+                <div class="summary-item">
+                    <span class="summary-label">Time</span>
+                    <span class="summary-value" id="summaryTime">7:00 PM</span>
+                </div>
+                <div class="summary-item">
+                    <span class="summary-label">Guests</span>
+                    <span class="summary-value" id="summaryGuests">2 Guests</span>
+                </div>
+            </div>
+
+            <p class="modal-note">A confirmation email and SMS with table details have been sent. If you need to make
+                changes, please contact us at least 2 hours prior to your scheduled time.</p>
+            <button class="btn btn-primary close-modal-action-btn" id="modalOkBtn">Perfect</button>
+        </div>
+    </div>
+
+    <!-- TOAST NOTIFICATION CONTAINER -->
+    <div class="toast-container" id="toastContainer"></div>
+
+    <!-- FOOTER SECTION (Styled to match the requested image theme) -->
+    <footer class="footer-section">
+        <div class="container">
+
+            <!-- Opening Hours Banner Box (Matched to image layout) -->
+            <div class="opening-hours-box">
+                <div class="oh-title-wrapper">
+                    <span class="cursive-text">Be there on time</span>
+                    <h3>Opening Hours</h3>
+                </div>
+                <div class="oh-slots">
+                    <div class="oh-slot">
+                        <h4>Monday - Thursday</h4>
+                        <p>12 PM - 12 AM</p>
+                    </div>
+                    <div class="oh-slot">
+                        <h4>Friday - Saturday</h4>
+                        <p>12 PM - 01 AM</p>
+                    </div>
+                    <div class="oh-slot">
+                        <h4>Sunday</h4>
+                        <p>12 PM - 11 PM</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Footer Columns (Matched to image card boxes layout) -->
+            <div class="footer-grid">
+                <!-- Connect box -->
+                <div class="footer-box">
+                    <h3>Connect With Us</h3>
+                    <p><i class="fa-solid fa-phone"></i> +1 (212) 555-8888</p>
+                    <p><i class="fa-solid fa-envelope"></i> info@cafeitalino.com</p>
+                </div>
+
+                <!-- Logo Brand box -->
+                <div class="footer-box brand-box">
+                    <a href="#" class="logo footer-logo">
+                        <span class="gold-text">Cafe</span> Italino
+                    </a>
+                    <div class="social-links">
+                        <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#" aria-label="TripAdvisor">
+                            <svg viewBox="0 0 64 64" fill="currentColor" aria-hidden="true">
+                                <path
+                                    d="M39.1 13.516a50.1 50.1 0 0 1 5.3 1.209 32.624 32.624 0 0 1 8.492 3.929 1.435 1.435 0 0 0 .7.2h10.189v.1a4.39 4.39 0 0 0-.4.705 16.853 16.853 0 0 0-2.5 5.239.477.477 0 0 0 .1.6 15.734 15.734 0 0 1 2.5 13.3 15.315 15.315 0 0 1-7.094 9.772 15.97 15.97 0 0 1-8.487 2.422 15.691 15.691 0 0 1-3.8-.5 16.211 16.211 0 0 1-7.893-4.634 9.057 9.057 0 0 1-.9-1.007c-1.1 1.713-2.3 3.425-3.4 5.138-1.2-1.713-2.3-3.425-3.4-5.037-.1 0-.1 0-.1.1l-.1.1a15.544 15.544 0 0 1-9.891 5.641 14.656 14.656 0 0 1-6.594-.4 15.314 15.314 0 0 1-7.793-4.936 15.784 15.784 0 0 1-3.8-8.16 13.951 13.951 0 0 1 .3-6.347 13.547 13.547 0 0 1 2.4-5.339.76.76 0 0 0 .1-.5 21.114 21.114 0 0 0-2.2-4.836 7.687 7.687 0 0 0-.8-1.108v-.1h9.9c.1 0 .3-.1.4-.1a34.036 34.036 0 0 1 7.194-3.526 50.8 50.8 0 0 1 5.6-1.511 33.995 33.995 0 0 1 5.6-.705 41.028 41.028 0 0 1 10.377.291zm-4 21.458a12.789 12.789 0 1 0 12.6-12.895 12.8 12.8 0 0 0-12.593 12.895zM15.924 22.079a12.846 12.846 0 1 0 12.788 12.895 12.706 12.706 0 0 0-12.788-12.895zm.7-3.324a15.746 15.746 0 0 1 10.091 4.231 16.211 16.211 0 0 1 5.2 9.772A16.351 16.351 0 0 1 37 23.087a15.491 15.491 0 0 1 10-4.231 36.237 36.237 0 0 0-14.187-3.022 38.507 38.507 0 0 0-16.19 2.921z" />
+                            </svg>
+                        </a>
+                        <a href="#" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+                    </div>
+                </div>
+
+                <!-- Location box -->
+                <div class="footer-box">
+                    <h3>Find Us</h3>
+                    <p><i class="fa-solid fa-location-dot"></i> 12 Luxury Avenue, Gastronomy District, NY 10001</p>
+                </div>
+
+                <!-- Map box -->
+                <div class="footer-box map-box">
+                    <div class="map-iframe-container">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.617539485188!2d-73.98785368459392!3d40.74844047932822!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c259a9b3117469%3A0xd134e199a405a163!2sEmpire%20State%20Building!5e0!3m2!1sen!2sus!4v1655938459467!5m2!1sen!2sus"
+                            width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade" title="Cafe Italino Location Map">
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+
+            <hr class="footer-divider">
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 Cafe Italino Restaurant. All Rights Reserved. Designed for exquisite culinary
+                    connoisseurs.</p>
+                <div class="footer-legal">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms & Conditions</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- GSAP & Lenis Smooth Scroll -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="https://unpkg.com/lenis@1.1.13/dist/lenis.min.js"></script>
+
+    <!-- Custom JS -->
+    <script src="scripts/script.js"></script>
+</body>
+
+</html>
